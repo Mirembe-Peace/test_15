@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 13</title>
+   
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+   
+</head>
+<body>
+    <div class="loading-screen">
+        <img src="/assets/images/logow.png" alt="Loading..." class="loading-logo">
+        <div class="loading-progress">Loading Models: <span id="loading-percentage">0</span>%</div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+    </div>
+    <canvas class="canvas"></canvas>
+    <div id="instructionPopup" class="popup">
+     <div class="popup-content">
+            <p>Use the black hotspots to navigate the room</p>
+            <button id="closePopup">OK</button>
+        </div>
+        </div>
+
+       <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.154.0/examples/jsm/",
+                "gsap": "https://unpkg.com/gsap@3.12.5/index.js"
+            }
+        }
+    </script> 
+     <script type="module" src="./js/script.js"></script>
+</body>
+</html>
